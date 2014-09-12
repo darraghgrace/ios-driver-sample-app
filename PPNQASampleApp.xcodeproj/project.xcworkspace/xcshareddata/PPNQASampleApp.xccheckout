@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F093B524-9E8B-4D2D-BE8E-1F871E67494D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PPNQASampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</key>
+		<string>ssh://10.103.51.149//opt/git/repos/mobiledev/PPNQASampleApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PPNQASampleApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://10.103.51.149//opt/git/repos/mobiledev/PPNQASampleApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PPNQASampleApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
