@@ -1,30 +1,46 @@
 //
-//  PPNMultiLevelTableViewController.m
+//  PPNMultiLevelCollectionViewCell.m
 //  PPNQASampleApp
 //
-//  Created by Villette, Stephane on 09/12/2014.
+//  Created by Villette, Stephane on 11/12/2014.
 //
 //
 
+#import "PPNMultiLevelCollectionViewCell.h"
 #import "PPNMultiLevelTableViewController.h"
 #import "PPNMultiLevelTableViewCell.h"
 
 #define kMultipleLevelsCellReuseID @"MultipleLevelsCellReuseID"
 
-@interface PPNMultiLevelTableViewController()
+@interface PPNMultiLevelCollectionViewCell()
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *tableData;
 
 @end
 
-static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+@implementation PPNMultiLevelCollectionViewCell
 
-@implementation PPNMultiLevelTableViewController
+- (id)initWithFrame:(CGRect)aRect {
+    self = [super initWithFrame:aRect];
+    
+    if (self){
+        self.backgroundColor = [UIColor redColor];
+    }
+    
+    return self;
+}
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)willMoveToSuperview:(UIView *)newSuperview {
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, 800, 800)];
+    self.tableView.allowsSelection = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     self.tableView.allowsSelection = NO;
+    
     self.tableData = [@[] mutableCopy];
     
     for (NSInteger count = 0; count < 10; count++) {
@@ -35,9 +51,9 @@ static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
     [self.tableView registerNib:multipleLevelsCellNib forCellReuseIdentifier:kMultipleLevelsCellReuseID];
     
     [self.tableView reloadData];
+    
+    [self.contentView addSubview:self.tableView];
 }
-
-#pragma mark TableView DataSource/Delegate
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMultipleLevelsCellReuseID forIndexPath:indexPath];
@@ -68,10 +84,5 @@ static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
         return [UIColor whiteColor];
     }
 }
-
-- (IBAction)dismissViewController:(id)sender {
-    [self.navigationController popViewControllerAnimated:TRUE];
-}
-
 
 @end

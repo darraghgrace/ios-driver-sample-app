@@ -6,6 +6,7 @@
 //
 
 #import "PPNContentViewController.h"
+#import "PPNMultiLevelContainerControllerViewController.h"
 
 @interface PPNContentViewController ()
 
@@ -162,7 +163,12 @@
 	}
 }
 
-
+- (IBAction)onTapMultiLevel:(id)sender {
+    
+    PPNMultiLevelContainerControllerViewController *multiLevelContainerViewController = [[PPNMultiLevelContainerControllerViewController alloc] initWithNibName:@"PPNMultiLevelContainerControllerViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:multiLevelContainerViewController animated:YES];
+}
 
 
 //- (void)handleDoubleTap:(UITapGestureRecognizer *)gesture {
