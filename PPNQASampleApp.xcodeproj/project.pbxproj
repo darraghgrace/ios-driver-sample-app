@@ -29,6 +29,9 @@
 		F53C18D61A373F4F0039F7CC /* PPNMultiLevelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53C18D41A373F4F0039F7CC /* PPNMultiLevelTableViewCell.xib */; };
 		F53C18D91A373F550039F7CC /* PPNMultiLevelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53C18D81A373F550039F7CC /* PPNMultiLevelTableViewController.m */; };
 		F57634F417BCFB7F001FB903 /* PPNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57634F317BCFB7F001FB903 /* PPNTableViewController.m */; };
+		F5A930551A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A930531A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.m */; };
+		F5A930561A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A930541A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.xib */; };
+		F5A9305A1A3A04390067C702 /* PPNMultiLevelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A930591A3A04390067C702 /* PPNMultiLevelCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,11 @@
 		F53C18D81A373F550039F7CC /* PPNMultiLevelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNMultiLevelTableViewController.m; sourceTree = "<group>"; };
 		F57634F217BCFB7F001FB903 /* PPNTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNTableViewController.h; sourceTree = "<group>"; };
 		F57634F317BCFB7F001FB903 /* PPNTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNTableViewController.m; sourceTree = "<group>"; };
+		F5A930521A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNMultiLevelContainerControllerViewController.h; sourceTree = "<group>"; };
+		F5A930531A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNMultiLevelContainerControllerViewController.m; sourceTree = "<group>"; };
+		F5A930541A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPNMultiLevelContainerControllerViewController.xib; sourceTree = "<group>"; };
+		F5A930581A3A04390067C702 /* PPNMultiLevelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNMultiLevelCollectionViewCell.h; sourceTree = "<group>"; };
+		F5A930591A3A04390067C702 /* PPNMultiLevelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNMultiLevelCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 		77427DBB17254C0A00E81C10 /* PPNQASampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5A930571A3A03C10067C702 /* CollectionViewCells */,
 				F53C18D11A373F4F0039F7CC /* TableViewCells */,
 				77427DC417254C0A00E81C10 /* AppDelegate.h */,
 				77427DC517254C0A00E81C10 /* AppDelegate.m */,
@@ -149,6 +158,9 @@
 				F57634F217BCFB7F001FB903 /* PPNTableViewController.h */,
 				F57634F317BCFB7F001FB903 /* PPNTableViewController.m */,
 				77427DBC17254C0A00E81C10 /* Supporting Files */,
+				F5A930521A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.h */,
+				F5A930531A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.m */,
+				F5A930541A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.xib */,
 			);
 			path = PPNQASampleApp;
 			sourceTree = "<group>";
@@ -194,6 +206,15 @@
 				F53C18D41A373F4F0039F7CC /* PPNMultiLevelTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F5A930571A3A03C10067C702 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F5A930581A3A04390067C702 /* PPNMultiLevelCollectionViewCell.h */,
+				F5A930591A3A04390067C702 /* PPNMultiLevelCollectionViewCell.m */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +290,7 @@
 				77427DC017254C0A00E81C10 /* InfoPlist.strings in Resources */,
 				77427DC817254C0A00E81C10 /* Default.png in Resources */,
 				77427DCA17254C0A00E81C10 /* Default@2x.png in Resources */,
+				F5A930561A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.xib in Resources */,
 				77427DCC17254C0A00E81C10 /* Default-568h@2x.png in Resources */,
 				77427DF517254C5500E81C10 /* MainStoryboard.storyboard in Resources */,
 				F53C18D61A373F4F0039F7CC /* PPNMultiLevelTableViewCell.xib in Resources */,
@@ -306,10 +328,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A9305A1A3A04390067C702 /* PPNMultiLevelCollectionViewCell.m in Sources */,
 				77427DC217254C0A00E81C10 /* main.m in Sources */,
 				F53C18D91A373F550039F7CC /* PPNMultiLevelTableViewController.m in Sources */,
 				F53C18D51A373F4F0039F7CC /* PPNMultiLevelTableViewCell.m in Sources */,
 				77427DC617254C0A00E81C10 /* AppDelegate.m in Sources */,
+				F5A930551A39FE760067C702 /* PPNMultiLevelContainerControllerViewController.m in Sources */,
 				77427DF617254C5500E81C10 /* PPNNavigationBarViewController.m in Sources */,
 				77427DF717254C5500E81C10 /* PPNRootViewController.m in Sources */,
 				77427E051725572900E81C10 /* PPNContentViewController.m in Sources */,

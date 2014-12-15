@@ -12,20 +12,24 @@
 	<dict>
 		<key>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</key>
 		<string>ssh://10.103.51.149//opt/git/repos/mobiledev/PPNQASampleApp.git</string>
+		<key>BFCAB774BA369A6C159208705099FB7F4C728EB9</key>
+		<string>https://github.com/stefpp674/ios-driver-sample-app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PPNQASampleApp.xcodeproj/project.xcworkspace</string>
+	<string>PPNQASampleApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</key>
+		<string>../../../PPNQASampleApp</string>
+		<key>BFCAB774BA369A6C159208705099FB7F4C728EB9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://10.103.51.149//opt/git/repos/mobiledev/PPNQASampleApp.git</string>
+	<string>https://github.com/stefpp674/ios-driver-sample-app.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</string>
+	<string>BFCAB774BA369A6C159208705099FB7F4C728EB9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>ACFEB0DF-3968-45F5-A924-98BF574C5F2A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PPNQASampleApp</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BFCAB774BA369A6C159208705099FB7F4C728EB9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>worspaceDarraghDev</string>
 		</dict>
 	</array>
 </dict>
